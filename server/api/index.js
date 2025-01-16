@@ -61,12 +61,10 @@ export default (req, res) => {
     });
   });
 
-  // Listen for incoming requests
+  // Vercel serverless function needs a response
   server.listen(8000, () => {
     console.log("Socket.IO server is running on port 8000");
   });
 
-  // Vercel serverless function needs a response
   res.status(200).send("Socket.IO server running");
 };
-
