@@ -16,7 +16,7 @@ export default (req, res) => {
       allowedHeaders: ["Content-Type"],
     },
   });
-
+ 
   // Maps to track connections
   const emailToSocketIdMap = new Map();
   const socketidToEmailMap = new Map();
